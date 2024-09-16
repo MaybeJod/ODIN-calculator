@@ -66,6 +66,14 @@ body {
     font-size: 2rem;
 }
 
+.zero {
+    grid-column: 1 / span 2;
+}
+
+.equals {
+    background-color: #8ab4f8;
+}
+
 .number-btn:hover, .other-btn:hover {
     background-color: #74787c;
 }
