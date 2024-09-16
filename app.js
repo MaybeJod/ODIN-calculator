@@ -1,0 +1,3 @@
+let lastInput;
+let result;
+

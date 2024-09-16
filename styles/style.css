@@ -1,0 +1,71 @@
+body {
+    background-color: #1f1f1f;
+    font-family: Arial, sans-serif;
+}
+
+/* containers  */
+.container {
+    max-width: 900px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.input-container {
+    max-width: 400px;
+    padding: 10px 0px 10px 0px;
+    margin: 0 auto;
+}
+
+.number-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+/* --------------------------------------------------------------------------------- */
+
+/* display result */
+.display-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #313335;
+    border-radius: 8px;
+}
+
+/* display last calculation */
+.last-input {
+    color: #969ba1;
+    font-size: 13px;
+    padding: 10px;
+    text-align: end;
+}
+
+/* display the current result */
+.display-text {
+    color:#e8eaed;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: end;
+}
+
+/* number buttons */
+.number-btn {
+    color: #e8eaed;
+    background-color: #3c4043;
+    border: 1px solid #3c4043;
+    border-radius: 4px;
+    font-size: 2rem;
+}
+
+/* arithmetics */
+.other-btn {
+    color: #e8eaed;
+    background-color: #5f6368;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    font-size: 2rem;
+}
+
+.number-btn:hover, .other-btn:hover {
+    background-color: #74787c;
+}
