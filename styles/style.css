@@ -41,7 +41,7 @@ body {
 }
 
 /* display the current result */
-.display-text {
+.display-value {
     color:#e8eaed;
     font-size: 2rem;
     padding: 10px;
@@ -66,14 +66,18 @@ body {
     font-size: 2rem;
 }
 
+/* specific for number 0 */
 .zero {
     grid-column: 1 / span 2;
 }
 
+/* specific for equals */
 .equals {
     background-color: #8ab4f8;
+    color: #202124;
 }
 
+/* hover effect on buttons */
 .number-btn:hover, .other-btn:hover {
     background-color: #74787c;
 }
