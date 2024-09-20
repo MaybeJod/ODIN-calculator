@@ -1,78 +1,52 @@
-let lastInput;
-let input;
+// variables
+let currentOperandDisplay = document.querySelector(".current-operand");
 
-let result;
+let operandBtn = document.querySelectorAll(".operand-btn");
 
-// 1
-let firstInput;
-//2
-let operatorInput;
-//3
-let secondInput;
-//4
-let equals;
-
-const displayValue = document.querySelector(".display-text");
-
-const btnValue = document.querySelectorAll("button");
-
-btnValue.forEach(element => {
-    element.addEventListener("click", e => {
-
-        let buttonText = e.target.innerText;
-    })
-})
-
-function printToDisplay(input) {
-    displayValue.value += input;
+// arithmetic functions
+function add(firstOperand, secondOperand) {
+  return firstOperand + secondOperand;
 }
 
-// addition
-function add(num1, num2) {
-    console.log(num1 + num2);
-    return num1 + num2;
+function subtract(firstOperand, secondOperand) {
+  return firstOperand - secondOperand;
 }
 
-//subtract
-function sub(num1, num2) {
-    console.log(num1 - num2);
-    return num1 - num2;
+function multiply(firstOperand, secondOperand) {
+  return firstOperand * secondOperand;
 }
 
-// multiply
-function multiply(num1, num2) {
-    console.log(num1 * num2);
-    return num1 * num2;
+function divide(firstOperand, secondOperand) {
+  if (secondOperand === 0) {
+    return "why are you fucking with me?";
+  } else {
+    return firstOperand / secondOperand;
+  }
 }
 
-//division
-function divide(num1, num2) {
-    console.log(num1 / num2);
-    return num1 / num2;
+function operate(operator, firstOperand, secondOperand) {
+  switch (operator) {
+    case "+":
+      return add(firstOperand, secondOperand);
+      break;
+    case "-":
+      return subtract(firstOperand, secondOperand);
+      break;
+    case "*":
+      return multiply(firstOperand, secondOperand);
+      break;
+    case "/":
+      return divide(firstOperand, secondOperand);
+      break;
+    default:
+      return "Error, you stupid";
+  }
 }
 
-function operate(operator, num1, num2) {
-    add(num1, num2);
-    sub(num1, num2);
-    multiply(num1, num2);
-    divide(num1, num2);
+function appendFistOperandToDisplay() {
+  operandBtn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      currentOperandDisplay.textContent += btn.textContent;
+    });
+  });
 }
-
-operate(add(), 5, 5);
-
-// first user inputs one number
-//select id and displays that in input result
-
-// input is displayed when chosen
-
-// add more numbers when user input
-
-// second user inputs a operator
-// operator is displayed when chosen
-
-// third the result is printed to the DOM
-// when the user want to calculate another calculation, display the last calculation
-// history should hav Ans = last result.
-
-// user should also be able to delete current input
-// user should also be able to delete one number from calculation

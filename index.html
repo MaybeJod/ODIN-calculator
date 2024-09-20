@@ -17,37 +17,38 @@
 <body>
     <main>
         <section class="container">
-            <div class="display-container input-container">
-                <div class="last-input">last input</div>
-                <div class="display-value">Result here</div>
+            <div class="input-container display-container">
+                <div class="previous-operand" data-previous-operand>last input</div>
+                <div class="current-operand" data-current-operand></div>
             </div>
 
             <div class="input-container">
 
                 <div class="number-container">
-                    <button class="other-btn" value="ac">AC</button>
-                    <button class="other-btn" value="del">DEL</button>
-                    <button class="other-btn" value="percent">%</button>
-                    <button class="other-btn" id="division" value="/">÷</button>
-
-                    <button class="number-btn" value="7">7</button>
-                    <button class="number-btn" value="8">8</button>
-                    <button class="number-btn" value="9">9</button>
-                    <button class="other-btn" id="multiplication" value="*">×</button>
-
-                    <button class="number-btn" value="4">4</button>
-                    <button class="number-btn" value="5">5</button>
-                    <button class="number-btn" value="6">6</button>
-                    <button class="other-btn" id="subtraction" value="-">−</button>
-
-                    <button class="number-btn" value="1">1</button>
-                    <button class="number-btn" value="2">2</button>
-                    <button class="number-btn" value="3">3</button>
-                    <button class="other-btn" id="addition" value="+">+</button>
-
-                    <button class="number-btn zero" value="0">0</button>
-                    <button class="other-btn" value="dot">.</button>
-                    <button class="other-btn equals" id="equals" value="=">=</button>
+                    <!-- first row -->
+                    <button class="alt-btn" data-all-clear="ac">AC</button>
+                    <button class="alt-btn" data-delete="delate">DEL</button>
+                    <button class="alt-btn" data-negative="negative">+/−</button>
+                    <button class="operator-btn" data-operator="/">÷</button>
+                    <!-- second row -->
+                    <button class="operand-btn" data-number="7">7</button>
+                    <button class="operand-btn" data-number="8">8</button>
+                    <button class="operand-btn" data-number="9">9</button>
+                    <button class="operator-btn" data-operator="*">×</button>
+                    <!-- third row -->
+                    <button class="operand-btn" data-number="4">4</button>
+                    <button class="operand-btn" data-number="5">5</button>
+                    <button class="operand-btn" data-number="6">6</button>
+                    <button class="operator-btn" data-operator="-">−</button>
+                    <!-- fourth row -->
+                    <button class="operand-btn" data-number="1">1</button>
+                    <button class="operand-btn" data-number="2">2</button>
+                    <button class="operand-btn" data-number="3">3</button>
+                    <button class="operator-btn" data-operator="+">+</button>
+                    <!-- fifth row -->
+                    <button class="alt-btn" data-number>.</button>
+                    <button class="operand-btn" data-number="0">0</button>
+                    <button class="alt-btn equals" data-equals="=">=</button>
                     
                 </div>
 

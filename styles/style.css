@@ -1,3 +1,17 @@
+:root {
+    --operand-bg-btn-color: #3c4043;
+    --operand-text-btn-color: #e8eaed;
+    --equals-bg-btn-color: #8ab4f8;
+    --equals-text-btn-color: #202124;
+
+    --btn-border: ;
+    --btn-border-radius: ;
+    --btn-font-size: ;
+    
+
+
+}
+
 body {
     background-color: #1f1f1f;
     font-family: Arial, sans-serif;
@@ -33,7 +47,7 @@ body {
 }
 
 /* display last calculation */
-.last-input {
+.previous-operand {
     color: #969ba1;
     font-size: 13px;
     padding: 10px;
@@ -41,7 +55,7 @@ body {
 }
 
 /* display the current result */
-.display-value {
+.current-operand{
     color:#e8eaed;
     font-size: 2rem;
     padding: 10px;
@@ -49,16 +63,16 @@ body {
 }
 
 /* number buttons */
-.number-btn {
+.operand-btn {
     color: #e8eaed;
     background-color: #3c4043;
     border: 1px solid #3c4043;
     border-radius: 4px;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /* arithmetics */
-.other-btn {
+.operator-btn {
     color: #e8eaed;
     background-color: #5f6368;
     border: 1px solid #5f6368;
@@ -66,18 +80,27 @@ body {
     font-size: 2rem;
 }
 
-/* specific for number 0 */
-.zero {
-    grid-column: 1 / span 2;
+/* AC, DEL, +/- */
+.alt-btn {
+    color: #e8eaed;
+    background-color: #5f6368;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    font-size: 2rem;
 }
 
 /* specific for equals */
 .equals {
     background-color: #8ab4f8;
     color: #202124;
+    grid-column: span 2;
 }
 
 /* hover effect on buttons */
-.number-btn:hover, .other-btn:hover {
+.operand-btn:hover, .operator-btn:hover, .alt-btn:hover {
     background-color: #74787c;
+}
+
+.equals:hover {
+    background-color: #a6c6f8;
 }
