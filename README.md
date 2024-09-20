@@ -6,7 +6,7 @@ For this project the goal is to recreate googles web calculator.
 
 ## TO-DO
 
-- [ ] make it work
-- [ ] fix print to display
-- [ ] fix calculator logic 
-- [ ] nothing works???
+- [ ] print operator to display
+- [ ] print last operation to display
+- [ ] runtime error 
+- [ ] refactor code
